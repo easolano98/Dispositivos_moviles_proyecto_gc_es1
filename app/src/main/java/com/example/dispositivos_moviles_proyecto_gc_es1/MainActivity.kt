@@ -2,9 +2,15 @@ package com.example.dispositivos_moviles_proyecto_gc_es1
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.TextView
+import android.widget.Toast
 import com.example.dispositivos_moviles_proyecto_gc_es1.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,14 +32,14 @@ class MainActivity : AppCompatActivity() {
         //var button2 = binding.button2
 
         // FindViewByID
-        //var button2 = findViewById<Button>(R.id.button2)
-        //var txtBuscar = findViewById<TextView>(R.id.txt_buscar)
+        var button2 = findViewById<ImageButton>(R.id.imageButton2)
+        var txtBuscar = findViewById<TextView>(R.id.buscar)
 
         // Con ViewBinding
         /*binding.button2.setOnClickListener{
             binding.txtBuscar.text = "El evento se ha ejecutado"
 
-            Toast.makeText(this, "AM MC xdxdxd",
+            Toast.makeText(this, "Hola mundo",
                 Toast.LENGTH_SHORT
             ).show()
 
@@ -45,20 +51,17 @@ class MainActivity : AppCompatActivity() {
         }*/
 
         // con FindViewById
-        /*button2.text = "INGRESAR"
+        //button2.text = "INGRESAR"
         button2.setOnClickListener{
             txtBuscar.text = "El evento se ha ejecutado"
 
-            Toast.makeText(this, "AM MC xdxdxd",
-                Toast.LENGTH_SHORT
-            ).show()
 
             Snackbar.make(
                 button2,
-                "Este es otro mensaje",
+                "Holi",
                 Snackbar.LENGTH_SHORT
-            ).setBackgroundTint(Color.BLACK).show()
-        }*/
+            ).setBackgroundTint(Color.GREEN).show()
+        }
 
     }
 
@@ -78,13 +81,11 @@ class MainActivity : AppCompatActivity() {
         binding.button2.setOnClickListener {
             binding.buscar.text = "El evento se ha ejecutado"
 
-            /*
+
             Toast.makeText(
-                this, "AM MC xdxdxd",
+                this, "Hola mundo",
                 Toast.LENGTH_SHORT
             ).show()
-            */
-
 
         }
 
