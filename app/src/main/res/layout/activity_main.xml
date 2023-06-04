@@ -39,14 +39,15 @@
         style="@style/botonEstilo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="252dp"
         android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/buscar"
         style="@style/busqueda"
         android:layout_width="284dp"
         android:layout_height="77dp"
@@ -67,8 +68,11 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#FF5722"
         android:text="Search..."
-        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/buscar"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/settings" />
+
+
+
 
   </androidx.constraintlayout.widget.ConstraintLayout>

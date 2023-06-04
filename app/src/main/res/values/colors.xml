@@ -9,4 +9,6 @@
     <color name="color_letra">#BDE8D3</color>
     <color name="color_boton">#C410D6</color>
     <color name="orange">#FF5722</color>
+    <color name="title_binding">#FF9800</color>
+
 </resources>
